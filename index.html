@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visca Barca</title>
+  <link rel="icon" type="image/png" sizes="48x48" href="images/barcelona-fc.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="crest">
+      <img width="48" height="48" src="images/messi.png" alt="messi"/>
+      Casa Culer
+    </div>
+    <nav>
+      <a href="#familia">Familia</a>
+      <a href="#historia">Historia</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="stripes"></div>
+
+  <section class="hero">
+    <p class="eyebrow">Do you like pickles? What do you mean you don't like pickles? I like tuna.</p>
+    <h1>Hola, Evush, Aceitunita <em>&amp;</em> Bandorin.</h1>
+    <p class="lede">Proud to be soon married to a <strong>Barca fan</strong> for life, and her 2 beautiful kids. <strong>Pickles</strong> remain non‑negotiable. <strong>Tuna</strong> is always available. <strong>Visca Barca.</strong></p>
+    <a class="pill" href="https://media1.tenor.com/m/6fcgihnem6gAAAAC/pig-looking-meme.gif" target="_blank" rel="noopener noreferrer">Click Here</a>
+  </section>
+
+  <div class="roster" id="familia">
+    <div class="card">
+      <span class="num">01</span>
+      <div class="name">Evush</div>
+      <div class="role">Captain Evush - Barça DNA. Legendary ma. Keeps the team together. Are we going for a walk?</div>
+    </div>
+    <div class="card">
+      <span class="num">02</span>
+      <div class="name">Aceitunita</div>
+      <div class="role">Midfield traveller - currently on international duty at uni! Bring bamba, please.</div>
+    </div>
+    <div class="card">
+      <span class="num">03</span>
+      <div class="name">Bandorin</div>
+      <div class="role">Youth academy - goleador loquito. It's Leviosa, not Leviosar!</div>
+    </div>
+  </div>
+
+  <section class="story" id="historia">
+    <h2>What this club stands for</h2>
+    <p>This isn't Camp Nou — it is a living room where match days are super locos, pickles get vanished instantly, and tuna sandwiches as a pre‑game meal. Estrella Galicia or Blue Moon when possible. Every win gets celebrated like a Clásico. Szczęsny, mate, we do love you, but... stop conceding goals, please?</p>
+    <p>Més que una família. I will always love you guys. Tiki Taka de la buena. Blaugrana blood. Cheers Pep! No GOAT discussion here - Messi 🐐</p>
+  </section>
+
+  <div class="banner">
+    <div>
+      <div class="txt">Thank you so much, Hansi — we all love you.</div>
+      <div class="sub">Messi, please show up to our wedding. Will send you an invite. TIA</div>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <div class="thanks">Made with love by Diego and my friend ClaudioAI.</div>
+    <!-- WW91IG1heSBub3Qgc2VlIHRoaXMsIGd1eXMsIGJ1dCBJIGRvIGxvdmUgeW91IHRocmVlLiBZb3UgbWFrZSBtZSBiZXR0ZXIu -->
+    <div class="social">
+      <a href="https://github.com/codieg0" aria-label="Github" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+            -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+            .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+            -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68
+            0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56
+            .82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+            0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+        </svg>
+      </a>
+    </div>
+  <div class="utc-date" id="utcDate"></div>
+</footer>
+</div>
+
+<script>
+  function updateUTCDate(){
+    const d = new Date();
+    document.getElementById('utcDate').textContent =
+      d.toISOString().replace('T', ' ').split('.')[0] + ' UTC';
+  }
+  updateUTCDate();
+  setInterval(updateUTCDate, 1000);
+</script>
+</body>
+</html>
